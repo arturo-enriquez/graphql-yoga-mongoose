@@ -11,6 +11,7 @@ export const typeDefs = `
       phone: String,
       city: String
     ): User!
+    deleteUser(id: ID!): User
   }
 
   type User {

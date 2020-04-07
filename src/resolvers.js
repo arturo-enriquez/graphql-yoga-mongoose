@@ -22,6 +22,9 @@ export const resolvers = {
       });
 
       return await user.save();
+    },
+    async deleteUser(_, { id }) {
+      return await User.findByIdAndDelete(id)
     }
   }
 }
